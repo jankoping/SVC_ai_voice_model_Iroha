@@ -1,0 +1,63 @@
+data:
+  block_size: 512
+  cnhubertsoft_gate: 10
+  duration: 2
+  encoder: contentvec768l12tta2x
+  encoder_ckpt: pretrain/contentvec/checkpoint_best_legacy_500.pt
+  encoder_hop_size: 160
+  encoder_out_channels: 768
+  encoder_sample_rate: 16000
+  extensions:
+  - wav
+  f0_extractor: fcpe
+  f0_max: 800
+  f0_min: 65
+  sampling_rate: 44100
+  train_path: data/train
+  valid_path: data/val
+  volume_smooth_size: 1024
+device: cuda:0
+env:
+  expdir: exp/workdir
+  gpu_id: 0
+infer:
+  infer_step: 50
+  method: euler
+model:
+  n_aux_chans: 512
+  n_aux_layers: 6
+  n_chans: 1024
+  n_layers: 6
+  n_spk: 1
+  t_start: 0.0
+  type: RectifiedFlow
+  use_attention: false
+  use_norm: true
+  use_pitch_aug: true
+  win_length: 2048
+model_type_index: 4
+spks:
+- iroha
+train:
+  amp_dtype: fp32
+  batch_size: 30
+  cache_all_data: false
+  cache_device: cpu
+  cache_fp16: true
+  decay_step: 4000
+  epochs: 100
+  gamma: 0.9
+  interval_force_save: 10000
+  interval_log: 1
+  interval_val: 250
+  lambda_ddsp: 1
+  lr: 0.0002
+  num_workers: 2
+  pin_memory: false
+  save_opt: false
+  save_tensorboard: false
+  weight_decay: 0.1
+use_pretrain: true
+vocoder:
+  ckpt: pretrain/nsf_hifigan/model
+  type: nsf-hifigan
