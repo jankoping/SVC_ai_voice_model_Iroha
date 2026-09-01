@@ -22,12 +22,8 @@ This repository contains the configuration, inference scripts, and dataset proce
 - `weights/`: Instructions and download links for pre-trained model weights (`.pth` & `.index`).
 
 ### Model Download
-Due to GitHub file size limitations, large pre-trained weights are hosted externally:
-- **Model Checkpoint (`.pth`)**: [Download from Hugging Face / Release Link](https://github.com/jankoping/SVC_ai_voice_model_Iroha/releases)
-- **Feature Index (`.index`)**: Included in the release asset package.
+ (https://github.com/jankoping/SVC_ai_voice_model_Iroha/releases)
 
-### Quick Start
-1. Clone this repository:
-   ```bash
-   git clone [https://github.com/jankoping/SVC_ai_voice_model_Iroha.git](https://github.com/jankoping/SVC_ai_voice_model_Iroha.git)
-   cd SVC_ai_voice_model_Iroha
+<a name="chinese"></a> 
+
+## 中文说明
