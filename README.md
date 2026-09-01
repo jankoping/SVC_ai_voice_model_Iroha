@@ -31,7 +31,7 @@ This project is intended solely for technical exchange, academic research, and p
 - **数据预处理**: 完成原始人声音频样本的采集、切分与降噪处理，涵盖响度归一化（Loudness Normalization）、静音切除（Silence Removal）以及音高范围校准（Pitch Range Calibration）。
 - **模型训练**: 基于 RVC 融合架构与 DDSP 6.3 模型进行训练构建
 - **参数调优与优化**: 持续监控损失函数收敛曲线，微调变调参数，并优化特征检索索引比率，实现音色相似度与发声自然度的平衡。
-- **推理测试与应用**: 针对多种曲风进行歌声转换（SVC）测试，验证模型在不同音区/音域下的表现力与稳定性。训练效果演示请参阅以下链接：https://www.bilibili.com/video/BV1iw8p6KEp2/ 和 https://www.bilibili.com/video/BV1bPun6YEkR/?vd_source=e5c30178e4ac410cbe9415975fd9f5d1
+- **推理测试与应用**: 针对多种曲风进行歌声转换（SVC）测试，验证模型在不同音区/音域下的表现力与稳定性。训练效果演示请参阅以下链接：https://www.bilibili.com/video/BV1iw8p6KEp2/ 和 https://www.bilibili.com/video/BV1bPun6YEkR/
 
 ### 模型下载
  (https://github.com/jankoping/SVC_ai_voice_model_Iroha/releases)
